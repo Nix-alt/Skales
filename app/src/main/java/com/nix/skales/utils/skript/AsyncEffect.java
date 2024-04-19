@@ -16,14 +16,14 @@
  *
  * Copyright Peter Güttinger, SkriptLang team and contributors
  */
-package com.author.myaddon.utils.skript;
+package com.nix.skales.utils.skript;
 
 import java.util.stream.Stream;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.Event;
 
-import com.author.myaddon.MyAddon;
+import com.nix.skales.Skales;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.effects.Delay;
@@ -57,7 +57,7 @@ public abstract class AsyncEffect extends Effect {
     }
 
     private AsyncKeyword asyncKeyword;
-    private boolean isDefaultAsync = MyAddon.config.getBoolean("is_default_async");
+    private boolean isDefaultAsync = Skales.config.getBoolean("is_default_async");
 
     protected abstract boolean initAsync(Expression<?>[] expr, int matchedPattern, Kleenean isDelayed,
             SkriptParser.ParseResult parseResult);
@@ -90,14 +90,14 @@ public abstract class AsyncEffect extends Effect {
 
         if (isAsync) {
             Object localVars = Variables.removeLocals(e); // Back up local variables
-            Bukkit.getScheduler().runTaskAsynchronously(MyAddon.instance, () -> {
+            Bukkit.getScheduler().runTaskAsynchronously(Skales.instance, () -> {
                 // Re-set local variables
                 if (localVars != null) Variables.setLocalVariables(e, localVars);
 
                 execute(e); // Execute this effect
 
                 if (getNext() != null) {
-                    Bukkit.getScheduler().runTask(MyAddon.instance, () -> { // Walk to next item synchronously
+                    Bukkit.getScheduler().runTask(Skales.instance, () -> { // Walk to next item synchronously
                         Object timing = null;
                         if (SkriptTimings.enabled()) { // getTrigger call is not free, do it only if we must
                             Trigger trigger = getTrigger();

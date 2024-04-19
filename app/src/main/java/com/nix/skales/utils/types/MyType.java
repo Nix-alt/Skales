@@ -1,4 +1,4 @@
-package com.author.myaddon.utils.types;
+package com.nix.skales.utils.types;
 
 import java.util.ArrayList;
 

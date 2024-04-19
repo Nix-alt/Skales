@@ -1,4 +1,4 @@
-package com.author.myaddon;
+package com.nix.skales;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

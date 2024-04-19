@@ -1,7 +1,7 @@
-package com.author.myaddon.skript.expressions;
+package com.nix.skales.skript.expressions;
 
-import com.author.myaddon.utils.skript.MultiplePropertyExpression;
-import com.author.myaddon.utils.types.MyType;
+import com.nix.skales.utils.skript.MultiplePropertyExpression;
+import com.nix.skales.utils.types.MyType;
 
 import org.bukkit.event.Event;
 

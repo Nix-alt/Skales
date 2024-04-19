@@ -1,6 +1,6 @@
-package com.author.myaddon.skript.events.bukkit;
+package com.nix.skales.skript.events.bukkit;
 
-import com.author.myaddon.MyAddon;
+import com.nix.skales.MyAddon;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.Event;

@@ -1,4 +1,4 @@
-package com.author.myaddon;
+package com.nix.skales;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,15 +9,15 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.author.myaddon.utils.PackageLoader;
+import com.nix.skales.utils.PackageLoader;
 import com.olyno.skriptmigrate.SkriptMigrate;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;
 
-public class MyAddon extends JavaPlugin {
+public class Skales extends JavaPlugin {
 
-    public static MyAddon instance;
+    public static Skales instance;
     public static FileConfiguration config;
 	SkriptAddon addon;
 
@@ -26,7 +26,7 @@ public class MyAddon extends JavaPlugin {
         instance = this;
         addon = Skript.registerAddon(this);
         try {
-            addon.loadClasses("com.author.myaddon.skript");
+            addon.loadClasses("com.nix.skales.skript");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -57,7 +57,7 @@ public class MyAddon extends JavaPlugin {
         }));
 
         // Register events
-        new PackageLoader<Listener>("com.author.myaddon.skript.events.bukkit", "register bukkit events").getList()
+        new PackageLoader<Listener>("com.nix.skales.skript.events.bukkit", "register bukkit events").getList()
         .thenAccept(events -> {
             for (Listener evt : events) {
                 getServer().getPluginManager().registerEvents(evt, this);

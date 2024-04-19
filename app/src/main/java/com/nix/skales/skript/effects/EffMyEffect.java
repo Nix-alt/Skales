@@ -1,4 +1,4 @@
-package com.author.myaddon.skript.effects;
+package com.nix.skales.skript.effects;
 
 import org.bukkit.event.Event;
 

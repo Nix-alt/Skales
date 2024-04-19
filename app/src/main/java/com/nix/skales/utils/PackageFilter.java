@@ -1,4 +1,4 @@
-package com.author.myaddon.utils;
+package com.nix.skales.utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-import com.author.myaddon.MyAddon;
+import com.nix.skales.Skales;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -24,7 +24,7 @@ import ch.njol.util.coll.iterator.EnumerationIterable;
 public class PackageFilter<T> {
 
     File file;
-    MyAddon plugin = MyAddon.instance;
+    Skales plugin = Skales.instance;
     String basePackage;
     String[] subPackages;
     List<Class<T>> classes = new LinkedList<>();

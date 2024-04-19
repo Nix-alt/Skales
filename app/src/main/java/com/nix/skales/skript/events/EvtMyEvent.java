@@ -1,6 +1,6 @@
-package com.author.myaddon.skript.events;
+package com.nix.skales.skript.events;
 
-import com.author.myaddon.skript.events.bukkit.MyEventBukkit;
+import com.nix.skales.skript.events.bukkit.MyEventBukkit;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.util.SimpleEvent;

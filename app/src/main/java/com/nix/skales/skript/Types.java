@@ -1,6 +1,6 @@
-package com.author.myaddon.skript;
+package com.nix.skales.skript;
 
-import com.author.myaddon.utils.types.MyType;
+import com.nix.skales.utils.types.MyType;
 
 import ch.njol.skript.classes.ClassInfo;
 import ch.njol.skript.classes.Parser;

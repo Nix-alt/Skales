@@ -1,4 +1,4 @@
-package com.author.myaddon.utils.skript;
+package com.nix.skales.utils.skript;
 
 import org.bukkit.event.Event;
 

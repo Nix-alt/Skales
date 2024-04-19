@@ -1,8 +1,8 @@
-package com.author.myaddon.skript.effects;
+package com.nix.skales.skript.effects;
 
 import org.bukkit.event.Event;
 
-import com.author.myaddon.utils.skript.AsyncEffect;
+import com.nix.skales.utils.skript.AsyncEffect;
 
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Examples;

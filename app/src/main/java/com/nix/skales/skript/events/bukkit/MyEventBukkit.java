@@ -1,6 +1,6 @@
 package com.nix.skales.skript.events.bukkit;
 
-import com.nix.skales.MyAddon;
+import com.nix.skales.Skales;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.Event;
@@ -21,7 +21,7 @@ public class MyEventBukkit extends Event implements Listener {
         // HERE
         // ===============
         // Execute the event asynchronously
-        Bukkit.getScheduler().runTask(MyAddon.instance, () -> Bukkit.getPluginManager().callEvent(this));
+        Bukkit.getScheduler().runTask(Skales.instance, () -> Bukkit.getPluginManager().callEvent(this));
     }
 
     public static HandlerList getHandlerList() {

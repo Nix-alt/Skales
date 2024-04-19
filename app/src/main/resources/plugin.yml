@@ -5,4 +5,4 @@ website: https://github.com/Nix-alt/Skales
 version: 0.1.0
 main: com.nix.skales.Skales
 depend:
-  - Skript
+  - Skript  

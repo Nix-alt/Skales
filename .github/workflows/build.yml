@@ -7,11 +7,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - uses: actions/checkout@v2
 
       - name: Setup Java environement
@@ -31,4 +29,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Skales
-          path: build/libs/Skales-all.jar
+          path: app/build/libs/Skales.jar

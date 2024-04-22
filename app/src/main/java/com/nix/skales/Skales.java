@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.nix.skales.utils.PackageLoader;
 import com.olyno.skriptmigrate.SkriptMigrate;
-import com.nix.skales.utils.Util
+import com.nix.skales.utils.Util;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;

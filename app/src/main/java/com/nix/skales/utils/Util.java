@@ -1,4 +1,4 @@
-package com.nix.skales.utils
+package com.nix.skales.utils;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.log.ErrorQuality;
@@ -14,7 +14,7 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Util() {
+public class Util {
 
     private static final String PREFIX = "&7[&bSk&3Bee&7] ";
     private static final String PREFIX_ERROR = "&7[&bSk&3Bee &cERROR&7] ";

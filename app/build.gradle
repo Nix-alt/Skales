@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.author.myaddon'
+group 'com.nix.skales'
 
 sourceCompatibility = 1.8
 

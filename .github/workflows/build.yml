@@ -29,4 +29,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Skales
-          path: app/build/libs/Skales.jar
+          path: app/build/libs/

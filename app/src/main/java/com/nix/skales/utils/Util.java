@@ -5,7 +5,6 @@ import org.bukkit.Bukkit;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,17 +17,7 @@ public class Util {
     @SuppressWarnings("deprecation") // Paper deprecation
     public static String getColString(String string) {
         Matcher matcher = HEX_PATTERN.matcher(string);
-        if (SKRIPT_IS_THERE) {
-            while (matcher.find()) {
-                final ChatColor hexColor = ChatColor.of(matcher.group().substring(1, matcher.group().length() - 1));
-                final String before = string.substring(0, matcher.start());
-                final String after = string.substring(matcher.end());
-                string = before + hexColor + after;
-                matcher = HEX_PATTERN.matcher(string);
-            }
-        } else {
-            string = HEX_PATTERN.matcher(string).replaceAll("");
-        }
+        string = HEX_PATTERN.matcher(string).replaceAll("");
         return ChatColor.translateAlternateColorCodes('&', string);
     }
 

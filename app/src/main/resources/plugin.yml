@@ -4,5 +4,11 @@ authors: [nix]
 website: https://github.com/Nix-alt/Skales
 version: 0.1.0
 main: com.nix.skales.Skales
+commands:
+  skales:
+    description: main command for the skales addon
+    aliases: /scd 
+    permission: skales.command
+    permission-message: &cYou can't use this command without permission! If this is an error, please contact an admin.
 depend:
   - Skript  

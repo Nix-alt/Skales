@@ -28,5 +28,5 @@ jobs:
       - name: Upload nightly build
         uses: actions/upload-artifact@v2
         with:
-          name: Skales
+          name: Skales.jar
           path: app/build/libs/

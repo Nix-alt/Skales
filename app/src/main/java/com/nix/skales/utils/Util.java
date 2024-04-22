@@ -1,4 +1,4 @@
-package com.nix.skales.util.log;
+package com.nix.skales.utils.logging;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;

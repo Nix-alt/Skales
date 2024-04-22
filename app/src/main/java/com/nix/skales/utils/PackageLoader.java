@@ -1,24 +1,22 @@
 package com.nix.skales.utils;
 
-import net.md_5.bungee.api.ChatColor;
-import org.bukkit.Bukkit;
 import ch.njol.skript.Skript;
 import ch.njol.skript.log.ErrorQuality;
-
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import net.md_5.bungee.api.ChatColor;
+import org.bukkit.Bukkit;
+import org.bukkit.NamespacedKey;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
-
-import ch.njol.skript.Skript;
 
 public class PackageLoader<T> {
 

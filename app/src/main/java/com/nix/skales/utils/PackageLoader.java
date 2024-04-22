@@ -1,11 +1,12 @@
 package com.nix.skales.utils;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import ch.njol.skript.Skript;
 
 public class PackageLoader<T> {
 
@@ -36,4 +37,5 @@ public class PackageLoader<T> {
     public CompletableFuture<LinkedList<T>> getList() {
         return instancesList;
     }
+
 }

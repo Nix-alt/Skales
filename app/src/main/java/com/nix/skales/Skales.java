@@ -23,7 +23,7 @@ public class Skales extends JavaPlugin {
 	SkriptAddon addon;
 
 	public void onEnable() {
-		util.log("[Skales] Enabled");
+		Util.log("Testing, testing");
 
         instance = this;
         addon = Skript.registerAddon(this);

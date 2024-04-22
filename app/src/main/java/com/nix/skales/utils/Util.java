@@ -14,6 +14,12 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+    /*
+    logic for util.log
+    written by ShaneBee
+    pulled from SkBee (with permission)
+    */
 public class Util {
 
     private static final String PREFIX = "&7[&bSk&3Bee&7] ";

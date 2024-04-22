@@ -26,7 +26,7 @@ public class Skales extends JavaPlugin {
     //startup logic
 	public void onEnable() {
 	    getLogger().info("Enabled Successfully");
-        getCommand("skales").setExecutor(new SkalesCommand());
+        getCommand("skales").setExecutor(new SkalesCommand(this));
         instance = this;
         addon = Skript.registerAddon(this);
         try {

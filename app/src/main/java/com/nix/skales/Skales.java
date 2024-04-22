@@ -24,10 +24,7 @@ public class Skales extends JavaPlugin {
 	public void onEnable() {
 		getLogger().info("[Skales] Enabled");
 	}
-
-	public void onDisable() {
-		getLogger().info("[Skales] Disabled");
-	}
+	
         instance = this;
         addon = Skript.registerAddon(this);
         try {
@@ -74,7 +71,7 @@ public class Skales extends JavaPlugin {
 			SkriptMigrate.load(this);
 		}
 
-        if (!getDataFolder().exists()) {
+	if (!getDataFolder().exists()) {
 			saveDefaultConfig();
 		}
 
@@ -91,4 +88,7 @@ public class Skales extends JavaPlugin {
 		}
 	}
 
+    public void onDisable() {
+		getLogger().info("[Skales] Disabled");
+    }
 }

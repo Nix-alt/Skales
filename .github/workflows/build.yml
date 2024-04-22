@@ -24,11 +24,11 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build MyAddon
+      - name: Build Skales
         run: ./gradlew build
 
       - name: Upload nightly build
         uses: actions/upload-artifact@v2
         with:
-          name: MyAddon
-          path: build/libs/MyAddon-all.jar
+          name: Skales
+          path: build/libs/Skales-all.jar

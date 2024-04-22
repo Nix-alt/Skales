@@ -1,13 +1,13 @@
 package com.nix.skales.commands;
 
-import org.bukkit.command.commandExecutor;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
 
-public class SkalesCommand implements commandExecutor{
+public class SkalesCommand implements CommandExecutor{
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String [] args) {
         if (args.lenth > 0){

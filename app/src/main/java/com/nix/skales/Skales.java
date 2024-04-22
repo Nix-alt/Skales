@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Bukkit.getLogger;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,7 +22,7 @@ public class Skales extends JavaPlugin {
 	SkriptAddon addon;
 
 	public void onEnable() {
-        Bukkit.getLogger().info("[Skales] Enabled");
+        getLogger().info("[Skales] Enabled");
 
         instance = this;
         addon = Skript.registerAddon(this);

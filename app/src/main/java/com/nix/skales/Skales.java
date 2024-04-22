@@ -5,13 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Bukkit.getLogger;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.nix.skales.utils.PackageLoader;
 import com.olyno.skriptmigrate.SkriptMigrate;
-import com.nix.skales.utils.Util;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;
@@ -23,7 +23,7 @@ public class Skales extends JavaPlugin {
 	SkriptAddon addon;
 
 	public void onEnable() {
-		Util.log("Testing, testing");
+        Bukkit.getLogger().info("[Skales] Enabled")
 
         instance = this;
         addon = Skript.registerAddon(this);

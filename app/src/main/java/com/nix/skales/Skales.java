@@ -12,7 +12,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import com.nix.skales.utils.PackageLoader;
-import com.nix.skales.commands;
+import com.nix.skales.commands.SkalesCommand;
 import com.olyno.skriptmigrate.SkriptMigrate;
 import org.bukkit.command.PluginCommand;
 import ch.njol.skript.Skript;

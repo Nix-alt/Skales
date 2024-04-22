@@ -16,11 +16,11 @@ public class SkalesCommand implements CommandExecutor{
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
             }
             else if (args[0].equals("info")){
-                String message = "&aPlaceholder message";
+                String message = "&aPlaceholder message1";
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
             }
             else if (args[0].equals("reload")){
-                String message = "&aPlaceholder message";
+                String message = "&aPlaceholder message2";
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
             }
         }

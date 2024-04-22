@@ -7,8 +7,6 @@ main: com.nix.skales.Skales
 commands:
   skales:
     description: main command for the skales addon
-    aliases: /scd 
     permission: skales.command
-    permission-message: &cYou can't use this command without permission! If this is an error, please contact an admin.
 depend:
   - Skript  

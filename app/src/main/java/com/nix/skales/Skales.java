@@ -9,7 +9,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.PluginManager;
-
+import org.bukkit.Bukkit;
+import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import com.nix.skales.utils.PackageLoader;
 import com.olyno.skriptmigrate.SkriptMigrate;
 import org.bukkit.command.PluginCommand;

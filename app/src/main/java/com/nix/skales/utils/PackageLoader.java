@@ -36,3 +36,4 @@ public class PackageLoader<T> {
     public CompletableFuture<LinkedList<T>> getList() {
         return instancesList;
     }
+}

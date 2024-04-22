@@ -13,6 +13,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import com.nix.skales.utils.PackageLoader;
 import com.olyno.skriptmigrate.SkriptMigrate;
+import org.bukkit.command;
 import org.bukkit.command.PluginCommand;
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;

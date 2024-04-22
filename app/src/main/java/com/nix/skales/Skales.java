@@ -21,8 +21,9 @@ public class Skales extends JavaPlugin {
     public static FileConfiguration config;
 	SkriptAddon addon;
 
+    //startup logic
 	public void onEnable() {
-	getLogger().info("[Skales] Enabled");
+	    getLogger().info("[Skales] Enabled");
         instance = this;
         addon = Skript.registerAddon(this);
         try {
@@ -76,8 +77,9 @@ public class Skales extends JavaPlugin {
 		config = getConfig();
 
     }
+    //shutdown logic
 	public void onDisable() {
-	getLogger().info("[Skales] Disabled");
+	    getLogger().info("[Skales] Disabled");
 	}
 
     private boolean classExist(String clazz) {

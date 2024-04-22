@@ -10,7 +10,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.nix.skales.utils.PackageLoader;
-import com.nix.skales.util.log;
 import com.olyno.skriptmigrate.SkriptMigrate;
 
 

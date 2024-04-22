@@ -21,17 +21,17 @@ public class Skales extends JavaPlugin {
     public static FileConfiguration config;
 	SkriptAddon addon;
 
-    public void onEnable() {
-	    getLogger().info("[Skales] Enabled");
+	public void onEnable() {
+		getLogger().info("[Skales] Enabled");
 	
-        instance = this;
-        addon = Skript.registerAddon(this);
-        try {
-            addon.loadClasses("com.nix.skales.skript");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+		instance = this;
+		addon = Skript.registerAddon(this);
+		try {
+			addon.loadClasses("com.nix.skales.skript");
+		} catch (IOException e) {
+            	e.printStackTrace();
+       		}
+	}
         // Register Metrics
         Metrics metrics = new Metrics(this);
         metrics.addCustomChart(new Metrics.SimplePie("used_language", () ->
@@ -86,8 +86,4 @@ public class Skales extends JavaPlugin {
 			return false;
 		}
 	}
-
-    public void onDisable() {
-	getLogger().info("[Skales] Disabled");
-    }
 }

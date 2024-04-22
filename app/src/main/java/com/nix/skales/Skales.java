@@ -8,12 +8,14 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.PluginManager;
 
 import com.nix.skales.utils.PackageLoader;
 import com.olyno.skriptmigrate.SkriptMigrate;
-
+import org.bukkit.command.PluginCommand;
 import ch.njol.skript.Skript;
 import ch.njol.skript.SkriptAddon;
+
 
 public class Skales extends JavaPlugin {
 
@@ -23,7 +25,8 @@ public class Skales extends JavaPlugin {
 
     //startup logic
 	public void onEnable() {
-	    getLogger().info("[Skales] Enabled");
+	    getLogger().info("Enabled Successfully");
+        getCommand("skales").setExecutor(new SkalesCommand());
         instance = this;
         addon = Skript.registerAddon(this);
         try {
@@ -79,7 +82,7 @@ public class Skales extends JavaPlugin {
     }
     //shutdown logic
 	public void onDisable() {
-	    getLogger().info("[Skales] Disabled");
+	    getLogger().info("Disabled Successfully");
 	}
 
     private boolean classExist(String clazz) {

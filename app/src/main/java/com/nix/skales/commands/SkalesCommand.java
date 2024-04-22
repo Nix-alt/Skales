@@ -27,7 +27,6 @@ public class SkalesCommand implements CommandExecutor{
         else {
             String message = "&aYou must enter arguments with the command!\n\n&7/skales help\n&7/skales info\n&7/skales reload\n";
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
-        return true;
         }
     }
 }

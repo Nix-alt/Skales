@@ -22,16 +22,15 @@ public class Skales extends JavaPlugin {
 	SkriptAddon addon;
 
 	public void onEnable() {
-		getLogger().info("[Skales] Enabled");
-	
-		instance = this;
-		addon = Skript.registerAddon(this);
-		try {
-			addon.loadClasses("com.nix.skales.skript");
-		} catch (IOException e) {
-            	e.printStackTrace();
-       		}
-	}
+	getLogger().info("[Skales] Enabled");
+        instance = this;
+        addon = Skript.registerAddon(this);
+        try {
+            addon.loadClasses("com.nix.skales.skript");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         // Register Metrics
         Metrics metrics = new Metrics(this);
         metrics.addCustomChart(new Metrics.SimplePie("used_language", () ->
@@ -56,7 +55,7 @@ public class Skales extends JavaPlugin {
             }
             return map;
         }));
-	
+
         // Register events
         new PackageLoader<Listener>("com.nix.skales.skript.events.bukkit", "register bukkit events").getList()
         .thenAccept(events -> {
@@ -70,13 +69,16 @@ public class Skales extends JavaPlugin {
 			SkriptMigrate.load(this);
 		}
 
-	if (!getDataFolder().exists()) {
+        if (!getDataFolder().exists()) {
 			saveDefaultConfig();
 		}
 
 		config = getConfig();
 
     }
+	public void onDisable() {
+	getLogger().info("[Skales] Disabled");
+	}
 
     private boolean classExist(String clazz) {
 		try {
@@ -86,4 +88,5 @@ public class Skales extends JavaPlugin {
 			return false;
 		}
 	}
+
 }

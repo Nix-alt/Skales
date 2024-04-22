@@ -23,6 +23,10 @@ public class SkalesCommand implements CommandExecutor{
                 String message = "&aPlaceholder message2";
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
             }
+            else {
+                String message = "&aImproper syntax!\n\n&7/skales help\n&7/skales info\n&7/skales reload\n";
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+            }
         }
         else {
             String message = "&aYou must enter arguments with the command!\n\n&7/skales help\n&7/skales info\n&7/skales reload\n";

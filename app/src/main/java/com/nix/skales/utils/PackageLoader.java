@@ -43,10 +43,6 @@ public class PackageLoader<T> {
     public CompletableFuture<LinkedList<T>> getList() {
         return instancesList;
     }
-}
-
-//Logger. Code from ShaneBee
-public class Util {
     private static final String PREFIX = "&7[&aSkales&7] ";
     private static final String PREFIX_ERROR = "&7[&aSkales &cERROR&7] ";
     private static final Pattern HEX_PATTERN = Pattern.compile("<#([A-Fa-f\\d]){6}>");

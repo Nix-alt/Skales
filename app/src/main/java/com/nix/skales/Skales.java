@@ -22,6 +22,7 @@ public class Skales extends JavaPlugin {
 	SkriptAddon addon;
 
 	public void onEnable() {
+		util.log("[Skales] Enabled");
 
         instance = this;
         addon = Skript.registerAddon(this);
@@ -56,6 +57,12 @@ public class Skales extends JavaPlugin {
             return map;
         }));
 
+	@Override
+	public void onDisable(){
+		util.log("[Skales] Disabled");
+	}
+
+	
         // Register events
         new PackageLoader<Listener>("com.nix.skales.skript.events.bukkit", "register bukkit events").getList()
         .thenAccept(events -> {

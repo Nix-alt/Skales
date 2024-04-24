@@ -84,8 +84,8 @@ public class Skales extends JavaPlugin {
 		}
 
 		config = getConfig();
-	float finaltime = (System.currentTimeMillis - start) / 1000
-	getLogger().info("Enabled in " + finaltime + " seconds."
+	float finaltime = (System.currentTimeMillis - start) / 1000;
+	getLogger().info("Enabled in " + finaltime + " seconds.");
 
     }
     //shutdown logic
@@ -94,8 +94,8 @@ public class Skales extends JavaPlugin {
 	    getLogger().info("Bottling mental issues...");
 	    getLogger().info("Removing Skales syntax...");
 	    getLogger().info("Disabling commands...");
-	    float finaltime = (System.currentTimeMillis - start) / 1000
-	    getLogger().info("Disabled in " + finaltime + " seconds."
+	    float finaltime = (System.currentTimeMillis - start) / 1000;
+	    getLogger().info("Disabled in " + finaltime + " seconds.");
 	}
 
     private boolean classExist(String clazz) {

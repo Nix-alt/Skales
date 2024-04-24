@@ -8,6 +8,7 @@ import org.bukkit.ChatColor;
 
 
 public class SkalesCommand implements CommandExecutor{
+    
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String [] args) {
         if (args.length > 0){

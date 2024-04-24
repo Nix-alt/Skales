@@ -27,7 +27,7 @@ public class Skales extends JavaPlugin {
 
     //startup logic
 	public void onEnable() {
-	    long start = System.currentTimeMillis;
+	    long start = System.currentTimeMillis();
 	    getLogger().info("Unpackaging mental issues...");
 	    getLogger().info("Registering syntax...");
 	    getLogger().info("Enabling commands...");
@@ -84,17 +84,17 @@ public class Skales extends JavaPlugin {
 		}
 
 		config = getConfig();
-	float finaltime = (System.currentTimeMillis - start) / 1000;
+	float finaltime = (System.currentTimeMillis() - start) / 1000;
 	getLogger().info("Enabled in " + finaltime + " seconds.");
 
     }
     //shutdown logic
 	public void onDisable() {
-	    long start = System.currentTimeMillis;
+	    long start = System.currentTimeMillis();
 	    getLogger().info("Bottling mental issues...");
 	    getLogger().info("Removing Skales syntax...");
 	    getLogger().info("Disabling commands...");
-	    float finaltime = (System.currentTimeMillis - start) / 1000;
+	    float finaltime = (System.currentTimeMillis() - start) / 1000;
 	    getLogger().info("Disabled in " + finaltime + " seconds.");
 	}
 

@@ -2,6 +2,7 @@ name: Skales
 description: idk
 authors: [nix]
 website: https://github.com/Nix-alt/Skales
+api-version: '1.13'
 version: 0.1.0
 main: com.nix.skales.Skales
 commands:

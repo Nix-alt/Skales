@@ -33,6 +33,7 @@ public class Skales extends JavaPlugin {
 	    getLogger().info("Enabling commands...");
 	    
         getCommand("skales").setExecutor(new SkalesCommand());
+        Util.log("Test %", 4);
         instance = this;
         addon = Skript.registerAddon(this);
         try {

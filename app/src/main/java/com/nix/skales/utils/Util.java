@@ -3,7 +3,6 @@ package com.nix.skales.utils;
 import ch.njol.skript.Skript;
 import ch.njol.skript.log.ErrorQuality;
 import net.md_5.bungee.api.ChatColor;
-import org.bukkit.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;

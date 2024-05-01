@@ -7,6 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import com.nix.skales.Skales;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -108,4 +108,15 @@ public class Skales extends JavaPlugin {
 		}
 	}
 
+    public Config getPluginConfig() {
+        return this.config;
+    }
+
+    public static Skales getPlugin() {
+        return instance;
+    }
+
+    
+
+
 }
